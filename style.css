@@ -1,0 +1,65 @@
+:root {
+  --primary-purple: #6422F2;
+  --secondary-purple: #9F4BF2;
+  --primary-blue: #0785F2;
+  --secondary-blue: #05DBF2;
+  --primary-orange: #F27405;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira Stencil One", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: var(--primary-purple);
+  h1 {
+    color: var(--primary-orange);
+    margin: 0;
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: var(--primary-blue);
+  .buttons {
+    display: flex;
+    gap: 20px;
+    .btn {
+      padding: 40px;
+      font-size: 150px;
+      border: none;
+      border-radius: 15px;
+      background-color: var(--secondary-purple);
+      border: 5px solid transparent;
+      &:hover {
+        border: 5px solid var(--secondary-blue);
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-purple);
+  color: var(--primary-orange);
+  padding: 20px 0;
+  .link {
+    text-decoration: none;
+    color: var(--secondary-blue);
+    &:hover {
+      color: var(--secondary-purple);
+    }
+  } 
+}
